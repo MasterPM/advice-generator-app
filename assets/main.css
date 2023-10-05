@@ -1,0 +1,226 @@
+/* color palette from <https://github.com/vuejs/theme> */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+     v2.0 | 20110126
+     License: none (public domain)
+  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --main-color: hsl(193, 38%, 86%);
+  --sub-color: hsl(150, 100%, 66%);
+  --grayGraylishBlue-color: hsl(217, 19%, 38%);
+  --darkGraylish-color: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+}
+
+.text {
+  color: hsl(186, 100%, 75%);
+  color: rgba(231, 90, 121, 0.2);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+body main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-size: 28px;
+  background-color: var(--darkBlue);
+}
+@media only screen and (max-width: 375px) {
+  body main {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+}
+body main .card {
+  max-width: 450px;
+  box-shadow: var(--darkGraylish-color) 0px 1px 5px;
+  background-color: var(--darkGraylish-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+@media only screen and (max-width: 375px) {
+  body main .card {
+    width: 100%;
+    height: 100%;
+  }
+}
+body main .card label {
+  color: var(--sub-color);
+  font-size: 10px;
+  letter-spacing: 5px;
+}
+body main .card p {
+  min-height: 100px;
+  border: 1px solid red;
+  margin: 1rem 0;
+  color: var(--main-color);
+  font-weight: 800;
+}
+body main .card .divied {
+  margin: 1rem 0;
+  display: block;
+  border: 1px solid red;
+  /* Mobile Styles */
+}
+@media only screen and (max-width: 375px) {
+  body main .card .divied {
+    display: none;
+  }
+}
+body main .card .mb {
+  display: none;
+  margin: 1rem 0;
+  /* Mobile Styles */
+}
+@media only screen and (max-width: 375px) {
+  body main .card .mb {
+    display: block;
+  }
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+  padding: 0.5rem;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */
