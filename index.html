@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
@@ -13,7 +13,21 @@
 
     <link rel="stylesheet" href="assets/main.css">
   <!-- script  -->
-  <script src="assets/script.js"></script>
+  <!-- <script src="assets/script.js"></script> -->
+  <script>
+
+ function Click() {
+    fetch("https://api.adviceslip.com/advice")
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById("ID").innerHTML = data.slip.id;
+        document.getElementById("Advice").innerHTML = data.slip.advice;
+      });
+  }
+
+
+
+  </script>
 
 </head>
 <body>
@@ -30,7 +44,7 @@
       <img  class="divied" src="assets/images/pattern-divider-desktop.svg" alt="">
       <img  class="divied mb" src="assets/images/pattern-divider-mobile.svg" alt="">
      
-      <button type="submit" class="icon-btn"><img src="assets/images/icon-dice.svg" alt=""></button>
+      <button type="submit" onclick="Click()" id="btn" class="icon-btn"><img src="assets/images/icon-dice.svg" alt=""></button>
    
     </div>
 </main>

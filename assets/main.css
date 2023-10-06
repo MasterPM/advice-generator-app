@@ -186,7 +186,6 @@ body main .card label {
 }
 body main .card p {
   min-height: 100px;
-  border: 1px solid red;
   margin: 1rem 0;
   color: var(--main-color);
   font-weight: 800;
@@ -194,7 +193,6 @@ body main .card p {
 body main .card .divied {
   margin: 1rem 0;
   display: block;
-  border: 1px solid red;
   /* Mobile Styles */
 }
 @media only screen and (max-width: 375px) {
@@ -218,11 +216,15 @@ body main .card .icon-btn {
   height: 50px;
   background-color: var(--sub-color);
   border: none;
+  cursor: pointer;
 }
 body main .card .icon-btn img {
   width: 50%;
   display: block;
   margin: auto;
+}
+body main .card .icon-btn:hover {
+  box-shadow: var(--sub-color) 0px 1px 10px;
 }
 
 footer {
